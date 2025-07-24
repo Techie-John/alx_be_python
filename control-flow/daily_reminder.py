@@ -25,8 +25,8 @@ match priority:
             reminder_message += ". It's time-bound, so try to get to it today."
         else:
             reminder_message += ". Consider completing it when you have free time."
-    case _:
+    case _: # Default case for invalid priority
         reminder_message = "Invalid priority level entered."
 
-# Provide a customized reminder
-print(f"\nReminder: {reminder_message}")
+# Provide a customized reminder with the exact required format
+print(f"Reminder: {reminder_message}")
